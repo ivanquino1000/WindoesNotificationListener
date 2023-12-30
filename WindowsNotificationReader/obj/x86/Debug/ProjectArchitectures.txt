@@ -1,0 +1,1 @@
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\WindowsNotificationReader.csproj;x86
