@@ -5,7 +5,8 @@
   xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
   xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
-  IgnorableNamespaces="uap mp uap3">
+  xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+  IgnorableNamespaces="uap mp uap3 iot">
 
   <Identity
     Name="f22cbe9b-e87c-4a95-a2db-4dd187f14446"
@@ -48,6 +49,8 @@
     <Capability Name="internetClient" />
     <uap:Capability Name="userAccountInformation"/>
     <uap3:Capability Name="userNotificationListener"/>
+    <iot:Capability Name="systemManagement"/>
+    <uap3:Capability Name="backgroundMediaPlayback"/>
     <DeviceCapability Name="location"/>
   </Capabilities>
 </Package>

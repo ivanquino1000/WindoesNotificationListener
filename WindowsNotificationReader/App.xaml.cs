@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace WindowsNotificationReader
     /// </summary>
     sealed partial class App : Application
     {
+        public static IServiceProvider ServiceProvider { get; private set; }
         /// <summary>
         /// Inicializa el objeto de aplicación Singleton. Esta es la primera línea de código creado
         /// ejecutado y, como tal, es el equivalente lógico de main() o WinMain().
@@ -30,7 +32,15 @@ namespace WindowsNotificationReader
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            ConfigureServices();
         }
+        private void ConfigureServices()
+        {
+            var services = new ServiceCollection();
+            services.AddSingleton<NotificationListener>();
+            ServiceProvider = services.BuildServiceProvider();
+        }
+
 
         /// <summary>
         /// Se invoca cuando la aplicación la inicia normalmente el usuario final. Se usarán otros puntos
@@ -94,6 +104,30 @@ namespace WindowsNotificationReader
         {
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: Guardar el estado de la aplicación y detener toda actividad en segundo plano
+            deferral.Complete();
+        }
+
+        /// <summary>
+        /// Se invoca al suspender la ejecución de la aplicación. El estado de la aplicación se guarda
+        /// sin saber si la aplicación se terminará o se reanudará con el contenido
+        /// de la memoria aún intacto.
+        /// </summary>
+        /// <param name="sender">Origen de la solicitud de suspensión.</param>
+        /// <param name="e">Detalles sobre la solicitud de suspensión.</param>
+        protected override void OnBackgroundActivated(BackgroundActivatedEventArgs args)
+        {
+            var deferral = args.TaskInstance.GetDeferral();
+
+            switch (args.TaskInstance.Task.Name)
+            {
+                case "UserNotificationChanged":
+                    // Call your own method to process the new/removed notifications
+                    // The next section of documentation discusses this code
+                    var evenNotificationListener = App.ServiceProvider.GetService<NotificationListener>();
+                     evenNotificationListener.SyncNotifications();
+                    break;
+            }
+
             deferral.Complete();
         }
     }

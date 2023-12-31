@@ -43,3 +43,11 @@ C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader
 C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_638316550480000000.json
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\bin\x86\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\bin\x86\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\bin\x86\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\FxResources.Microsoft.Extensions.DependencyInjection.SR.resw
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\FxResources.Microsoft.Extensions.DependencyInjection.Abstractions.SR.resw
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\resources.en-us.resfiles
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\resources.en-us.resfiles.intermediate
