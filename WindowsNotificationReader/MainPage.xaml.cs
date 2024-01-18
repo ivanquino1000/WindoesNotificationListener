@@ -43,19 +43,23 @@ namespace WindowsNotificationReader
     {
         //private UserNotificationListener notificationListener;
         //private NotificationListener notificationListener;
-        public IServiceProvider ServiceProvider { get; private set; } 
+        public IServiceProvider ServiceProvider { get; private set; }
+        
 
-        public  MainPage()
+        public MainPage()
         {
-            
+
             this.InitializeComponent();
 
             ConfigureServices();
+
             var MainNotificationListener = App.ServiceProvider.GetService<NotificationListener>();
             
             MainNotificationListener.Init();
+            DataContext = MainNotificationListener;
             //Loaded += MainPage_Loaded;
         }
+
 
 
         private void ConfigureServices()
@@ -67,6 +71,16 @@ namespace WindowsNotificationReader
 
             // Build the service provider
             ServiceProvider = services.BuildServiceProvider();
+        }
+
+        private void PrintSummary_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("Print: \n Summary Selected ....");
+        }
+
+        private void PrintDetails_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("Print: \n Complete Selected ....");
         }
         //private void MainPage_Loaded(object sender, RoutedEventArgs e)
         //{

@@ -51,3 +51,9 @@ C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader
 C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\FxResources.Microsoft.Extensions.DependencyInjection.Abstractions.SR.resw
 C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\resources.en-us.resfiles
 C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\resources.en-us.resfiles.intermediate
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\bin\x86\Debug\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\bin\x86\Debug\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.dll
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\bin\x86\Debug\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.pdb
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.pri.xml
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\Microsoft.UI.Xaml.pri.xml
+C:\Users\EQUIPO\source\repos\WindowsNotificationReader\WindowsNotificationReader\obj\x86\Debug\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\en-US\Microsoft.Toolkit.Uwp.UI.Controls.Resources.resw
