@@ -1,0 +1,1 @@
+C:\Users\ivan\Desktop\notificationListener\notificationReader\notificationReader\notificationReader.csproj;x86
